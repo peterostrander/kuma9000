@@ -1,0 +1,8 @@
+{
+  "kuma9000": {
+    "name": "Kuma LED + Button Control",
+    "url": "Controls LED and handles shutdown for Super Kuma 9000",
+    "version": "1.0",
+    "slug": "kuma9000"
+  }
+}

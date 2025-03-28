@@ -1,0 +1,22 @@
+name: "Kuma LED + Button Control"
+version: "1.0"
+slug: "kuma9000"
+description: "Controls LED and handles shutdown for Super Kuma 9000"
+startup: services
+boot: auto
+options: {}
+schema: {}
+host_network: true
+privileged:
+  - SYS_RAWIO
+devices:
+  - /dev/gpiochip0:/dev/gpiochip0
+  - /dev/gpiochip1:/dev/gpiochip1
+  - /dev/gpiochip2:/dev/gpiochip2
+full_access: true
+init: false
+panel_icon: "mdi:led-on"
+arch:
+  - armv7
+  - aarch64
+  - amd64
